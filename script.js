@@ -1,0 +1,1 @@
+console.log("[script.js]:: Connected and working properly!");

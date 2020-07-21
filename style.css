@@ -67,6 +67,7 @@ header::before{
 
 .nav-list{
   list-style: none;
+  padding-inline-start: 0rem;
 }
 
 .nav-item{
@@ -174,9 +175,19 @@ header.active::before{
   transform: translate3d(0, 0, -25rem);
 }
 
+@media screen and (max-width: 450px){
+  .nav-link{
+    line-height: 5rem;
+  }
 
+  .hamburger{
+    top: 1.5rem;
+    right: 1.5rem;
+  }
+}
 
-
-section{
-  background-color: darkcyan;
+@media screen and (max-width: 450px){
+  .sidebar{
+    width: 25rem;
+  }
 }

@@ -19,7 +19,7 @@ selectElement('.hamburger').addEventListener('click', () => {
 //Clicking outside of menu, close the sidebar.
 //both header AND mainContent have active at same time, so the inner IF only has to check for one.
 window.onclick = (event) => {
-  if(event.target.matches('active')){
+  if(event.target.matches('.active')){
     if(header.classList.contains('active')){
       header.classList.remove('active');
       mainContent.classList.remove('active');

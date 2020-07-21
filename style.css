@@ -148,8 +148,8 @@ main{
 
 section{
   width: 100%;
-  height: 100%;
-  background-color: darkcyan;
+  height: 100vh;
+  background-color: #1f253d;
 }
 
 /*Toggling the 'X' and '=' menu icons*/
@@ -164,6 +164,14 @@ header.active::before{
   transform: translate(0,0);
   opacity: 1;
   transition: opacity 0.6s;
+}
+
+.active .sidebar{
+  transform: translateX(0);
+}
+
+.active .zoom-content{
+  transform: translate3d(0, 0, -25rem);
 }
 
 

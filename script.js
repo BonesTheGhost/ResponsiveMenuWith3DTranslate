@@ -13,5 +13,17 @@ const mainContent = selectElement('main');
 //toggle: As opposed to manually typing each class every time add/remove('nav-link myStyle active')
 selectElement('.hamburger').addEventListener('click', () => {
   header.classList.toggle('active');
+  mainContent.classList.toggle('active');
 });
+
+//Clicking outside of menu, close the sidebar.
+//both header AND mainContent have active at same time, so the inner IF only has to check for one.
+window.onclick = (event) => {
+  if(event.target.matches('active')){
+    if(header.classList.contains('active')){
+      header.classList.remove('active');
+      mainContent.classList.remove('active');
+    }
+  }
+}
 
